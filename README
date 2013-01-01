@@ -3,34 +3,34 @@ NAME
     make_immutable
 
 SYNOPSIS
-            {
-                    package Shape;
-                    use Moose;
-                    use MooseX::ABCD;
-                    requires 'draw';
-                    __PACKAGE__->meta->make_immutable;
-            }
-        
-            {
-                    package Circle;
-                    use Moose;
-                    extends 'Shape';
-                    sub draw {
-                            ...;
-                    }
-                    __PACKAGE__->meta->make_immutable;
-            }
-        
-            my $shape  = Shape->new;   # dies
-            my $circle = Circle->new;  # succeeds
-        
-            {
-                    package Square;
-                    use Moose;
-                    extends 'Shape';
-                    __PACKAGE__->meta->make_immutable;
-                    # ^^^ dies, draw is unimplemented
-            }
+       {
+          package Shape;
+          use Moose;
+          use MooseX::ABCD;
+          requires 'draw';
+          __PACKAGE__->meta->make_immutable;
+       }
+   
+       {
+          package Circle;
+          use Moose;
+          extends 'Shape';
+          sub draw {
+             ...;
+          }
+          __PACKAGE__->meta->make_immutable;
+       }
+   
+       my $shape  = Shape->new;   # dies
+       my $circle = Circle->new;  # succeeds
+   
+       {
+          package Square;
+          use Moose;
+          extends 'Shape';
+          __PACKAGE__->meta->make_immutable;
+          # ^^^ dies, draw is unimplemented
+       }
 
 DESCRIPTION
     What does ABCD stand for? Hmmm... maybe "abstract base classes
@@ -64,7 +64,7 @@ AUTHOR
     warranties.)
 
 COPYRIGHT AND LICENCE
-    This software is copyright (c) 2012 by Toby Inkster.
+    This software is copyright (c) 2012-2013 by Toby Inkster.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.

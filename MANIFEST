@@ -1,4 +1,5 @@
 Changes
+COPYRIGHT
 inc/Module/AutoInstall.pm
 inc/Module/Install.pm
 inc/Module/Install/AutoInstall.pm
@@ -29,7 +30,6 @@ meta/changes.pret
 meta/doap.pret
 meta/makefile.pret
 README
-t/01basic.t
 t/abstract-subclass.t
 t/basic.t
 t/custom-constructor.t

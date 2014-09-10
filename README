@@ -33,22 +33,22 @@ SYNOPSIS
        }
 
 DESCRIPTION
-    What does ABCD stand for? Hmmm... maybe "abstract base classes
-    deferred"? or "abstract base classes declare-compatible"? (This module
-    works with MooseX::Declare, whereas MooseX::ABC does not!)
+    What does ABCD stand for? Hmmm... maybe "abstract base classes deferred"?
+    or "abstract base classes declare-compatible"? (This module works with
+    MooseX::Declare, whereas MooseX::ABC does not!)
 
     Anyway, whatever ABCD does or does not stand for, this is what
-    MooseX::ABCD does: it works just like MooseX::ABC, the checks that
-    derived classes implement all abstract methods happen when the class is
-    made immutable, not when inheritance is set up.
+    MooseX::ABCD does: it works just like MooseX::ABC, the checks that derived
+    classes implement all abstract methods happen when the class is made
+    immutable, not when inheritance is set up.
 
     Why? It works better with MooseX::Declare this way.
 
   Functions
     This module exports one function to your namespace:
 
-    "requires"
-        Works like "requires" in Moose roles, but for classes.
+    `requires`
+        Works like `requires` in Moose roles, but for classes.
 
 BUGS
     Please report any bugs to
@@ -66,8 +66,8 @@ AUTHOR
 COPYRIGHT AND LICENCE
     This software is copyright (c) 2012-2013 by Toby Inkster.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+    This is free software; you can redistribute it and/or modify it under the
+    same terms as the Perl 5 programming language system itself.
 
 DISCLAIMER OF WARRANTIES
     THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
